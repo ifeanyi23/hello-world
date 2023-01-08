@@ -26,7 +26,7 @@ jobs:
       - checkout
       - run:
           name: "Prints hello to circleci console"
-          command: echo "hello world" > output.txt
+          command: echo "hello world" > ~/output.txt
       - persist_to_workspace:
           root: ~/
           paths:
